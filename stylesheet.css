@@ -44,6 +44,11 @@ body {
   transform: translateY(0);
 }
 
+html:not([lang="zh"]) .zh,
+html[lang="zh"] .en {
+  display: none !important;
+}
+
 /* Header */
 .header {
   margin-bottom: 50px;
@@ -207,6 +212,23 @@ ul li strong {
 ul li br + em {
   display: block;
   margin-top: 4px;
+}
+
+.entries .meta {
+  display: block;
+  font-style: italic;
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.entries .desc {
+  display: block;
+  margin-top: 4px;
+}
+
+.entries .me {
+  font-weight: 600;
+  color: #222;
 }
 
 /* Footer */
